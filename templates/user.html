@@ -1,0 +1,64 @@
+<h1>why no work<h1>
+
+
+
+{% extends bootstrap/base.html %}
+{% block title %}Databoba{% endblock %}
+
+{% block navbar %}
+{% endblock %}
+
+
+{% block content %}
+{% endblock%}
+
+
+
+
+
+
+<!-- {{name}} construct represents a placeholder that tells the template engine that the data goes into this specific spot
+<h1>Hello, {{name|capitalize}!</h1>
+-->
+
+
+<!-- conditional statements for constrol structures 
+{% if user %}
+	Hello, {{user}}!
+{% else %}
+	Hello, Stranger!
+{%endif%}
+-->
+
+
+<!-- render a list of elements in a for loop 
+<ul>
+	{% for comment in comments %}
+		<li>{{ comment }}</li>
+	{% endfor %}
+</ul>
+-->
+
+<!-- how jinja supports macros (functions in python)
+{% macro render_comment(comment) %}
+	<li>{{ comment }}</li>
+{% endmacro %}
+-->
+
+
+
+<!-- 
+{% extends bootstrap/base.html %}
+
+{% block title %}Databoba{% endblock %}
+
+
+
+{% block content %}
+	<div class="container">
+		<div class="page-header">
+			<h1>Hello, {{name}}!</h1>
+		</div>
+	</div>
+{% endblock %}
+-->
